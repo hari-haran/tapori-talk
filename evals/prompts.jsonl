@@ -1,0 +1,3 @@
+{"id":"late-mock","prompt":"abe mock toh kiya na phir test fail kyu? Module import happens before vi.mock. Explain the cause and fix.","must_include_any":["import","mock","hoist"]}
+{"id":"auth-status","prompt":"kya scene hai auth ka? Seedha bol: expired token validation is skipped in middleware.","must_include_any":["expired","validation","middleware"]}
+{"id":"function-ultra","prompt":"ultra: this function validates a token, loads a user, then returns a session. samjha na","must_include_any":["token","user","session"]}

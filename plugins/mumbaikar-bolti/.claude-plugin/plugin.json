@@ -1,0 +1,9 @@
+{
+  "name": "tapori-talk",
+  "displayName": "Tapori Talk",
+  "description": "Understand Mumbai Hinglish and reduce conversational and noisy tool-output token waste without reducing engineering quality.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Hariharan"
+  }
+}

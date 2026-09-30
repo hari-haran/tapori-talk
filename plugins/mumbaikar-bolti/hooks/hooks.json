@@ -1,0 +1,17 @@
+{
+  "description": "Conservatively compact large, noisy Bash output before Claude reads it.",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/compact-bash-output.mjs\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

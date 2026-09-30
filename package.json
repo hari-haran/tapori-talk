@@ -1,0 +1,39 @@
+{
+  "name": "tapori-talk",
+  "version": "0.1.0",
+  "description": "Understand tapori-talk Hinglish and return compact, technically precise Claude Code responses.",
+  "type": "module",
+  "bin": {
+    "tapori-talk": "./bin/tapori-talk.mjs"
+  },
+  "files": [
+    ".claude-plugin/",
+    "bin/",
+    "evals/",
+    "plugins/",
+    "scripts/benchmark.mjs",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check:versions": "node scripts/check-versions.mjs",
+    "check": "npm run check:versions && npm test && npm pack --dry-run",
+    "benchmark": "node scripts/benchmark.mjs",
+    "pack:local": "npm pack"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "claude-code",
+    "claude-plugin",
+    "hinglish",
+    "tapori-talk",
+    "token-optimization",
+    "developer-tools"
+  ],
+  "author": "Hariharan",
+  "license": "MIT"
+}

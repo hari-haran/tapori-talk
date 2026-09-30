@@ -1,0 +1,15 @@
+{
+  "name": "tapori-talk",
+  "description": "Compact, vernacular-first Claude Code plugins.",
+  "owner": {
+    "name": "Hariharan"
+  },
+  "plugins": [
+    {
+      "name": "tapori-talk",
+      "source": "./plugins/tapori-talk",
+      "description": "Understand Mumbai Hinglish and answer in compact technical English.",
+      "version": "0.1.0"
+    }
+  ]
+}
