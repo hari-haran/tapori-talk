@@ -2,7 +2,7 @@
 
 **Speak naturally. Get the smallest technically complete answer.**
 
-Tapori Talk is a Claude Code plugin that understands Mumbai-style Hinglish and returns concise, technically precise English. It also removes noisy tool-output narration while preserving code, commands, paths, errors, warnings, and validation evidence.
+Tapori Talk is a coding-assistant customization that understands Mumbai-style Hinglish and returns concise, technically precise English. It works with Claude Code and GitHub Copilot, and its Claude Code hook also removes noisy tool-output narration while preserving code, commands, paths, errors, warnings, and validation evidence.
 
 ```text
 You:    abe mock toh kiya na phir test fail kyu
@@ -61,6 +61,12 @@ The repository is also a valid Claude marketplace. After it is on GitHub:
 claude plugin marketplace add shantcoder/tapori-talk
 claude plugin install tapori-talk@tapori-talk
 ```
+
+## GitHub Copilot
+
+This repository includes `.github/copilot-instructions.md`. GitHub Copilot automatically reads it when the repository is open in VS Code, GitHub.com, or another supported environment. It provides the Tapori Talk input interpretation and concise-response rules without requiring a separate installation.
+
+The tool-output compression hook is Claude Code-specific; Copilot still receives the input and response behavior from the instructions file.
 
 ## What ships
 

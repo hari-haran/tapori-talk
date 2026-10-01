@@ -16,3 +16,9 @@ test("marketplace points to a valid plugin", () => {
   assert.ok(fs.existsSync(path.join(pluginRoot, "skills", "tapori-talk", "SKILL.md")));
   assert.ok(fs.existsSync(path.join(pluginRoot, "output-styles", "tapori-talk.md")));
 });
+
+test("Copilot instructions are included", () => {
+  const instructions = path.join(root, ".github", "copilot-instructions.md");
+  assert.ok(fs.existsSync(instructions));
+  assert.match(fs.readFileSync(instructions, "utf8"), /Mumbai-style Hinglish/);
+});
