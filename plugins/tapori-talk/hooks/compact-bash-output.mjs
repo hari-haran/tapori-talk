@@ -17,7 +17,7 @@ function envInt(env, name, fallback) {
 }
 
 function enabled(env) {
-  return !new Set(["0", "false", "off", "no"]).has(String(env.tapori-talk_BOLTI_HOOK ?? "1").toLowerCase());
+  return !new Set(["0", "false", "off", "no"]).has(String(env["tapori-talk_BOLTI_HOOK"] ?? "1").toLowerCase());
 }
 
 export function isEligible(command, text, options = {}) {
@@ -104,8 +104,8 @@ export function compactText(text, options = {}) {
 }
 
 function defaultCacheDir(env) {
-  if (env.tapori-talk_BOLTI_CACHE) {
-    return path.resolve(env.tapori-talk_BOLTI_CACHE.replace(/^~(?=$|[\\/])/, os.homedir()));
+  if (env["tapori-talk_BOLTI_CACHE"]) {
+    return path.resolve(env["tapori-talk_BOLTI_CACHE"].replace(/^~(?=$|[\\/])/, os.homedir()));
   }
   return path.join(os.homedir(), ".cache", "tapori-talk", "raw");
 }

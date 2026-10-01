@@ -2,7 +2,7 @@
 
 **Speak naturally. Get the smallest technically complete answer.**
 
-Tapori Talk is a Claude Code plugin for people who think and type in Mumbai-style Hinglish but want precise, compact technical output.
+Tapori Talk is a Claude Code plugin that understands Mumbai-style Hinglish and returns concise, technically precise English. It also removes noisy tool-output narration while preserving code, commands, paths, errors, warnings, and validation evidence.
 
 ```text
 You:    abe mock toh kiya na phir test fail kyu
@@ -15,10 +15,8 @@ tapori-talk is the interface, not the compression algorithm. Savings are expecte
 
 ### From GitHub before npm publication
 
-Replace `YOUR_GITHUB_USERNAME` after pushing this repository:
-
 ```bash
-npx -y github:YOUR_GITHUB_USERNAME/tapori-talk
+npx -y github:shantcoder/tapori-talk
 ```
 
 ### From npm after publication
@@ -60,7 +58,7 @@ Restart Claude Code or run `/reload-plugins` after installation.
 The repository is also a valid Claude marketplace. After it is on GitHub:
 
 ```bash
-claude plugin marketplace add YOUR_GITHUB_USERNAME/tapori-talk
+claude plugin marketplace add shantcoder/tapori-talk
 claude plugin install tapori-talk@tapori-talk
 ```
 
